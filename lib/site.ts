@@ -7,7 +7,7 @@ export const INSTAGRAM_URL = 'https://instagram.com/ateliehousecortinas'
 
 export const NAV_LINKS = [
   { label: 'Cortinas', href: '#cortinas' },
-  { label: 'Tecidos', href: '#tecidos' },
+  { label: 'Tecidos', href: '/tecidos' },
   { label: 'Projetos', href: '#projetos' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'Contato', href: '#contato' },

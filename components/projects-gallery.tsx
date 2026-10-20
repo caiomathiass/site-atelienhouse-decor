@@ -1,32 +1,46 @@
-
 import Image from 'next/image'
 import { SectionHeading } from '@/components/section-heading'
 import { Reveal } from '@/components/reveal'
 
 const projects = [
   {
-    label: 'Sala de estar',
-    src: '/images/hero-living-room.png',
+    label: 'Cortina para sala de jantar',
+    src: '/images/cortina blackout sala de jantar.jpg',
     className: 'sm:col-span-2 sm:row-span-2',
   },
   {
-    label: 'Quarto',
-    src: '/images/ambiente-quarto.png',
+    label: 'Cortina para quarto com bandô',
+    src: '/images/cortina quarto com bando.jpg',
     className: '',
   },
   {
-    label: 'Sala de jantar',
-    src: '/images/ambiente-jantar.png',
+    label: 'Cortina para quarto',
+    src: '/images/cortina quarto soton.jpg',
     className: '',
   },
   {
-    label: 'Sala de TV',
-    src: '/images/ambiente-home-theater.png',
+    label: 'Cortina para sala de estar',
+    src: '/images/sala de estar blackout.jpg',
     className: '',
   },
   {
-    label: 'Ambiente corporativo',
-    src: '/images/ambiente-corporativo.png',
+    label: 'Cortina de voil para sala',
+    src: '/images/sala de estar vouil.jpg',
+    className: '',
+  },
+  {
+    label: 'Cortina de voil com acabamento curvo',
+    src: '/images/sala de estar curva vouil.jpg',
+    className: '',
+  },
+  {
+    label: 'Cortina de voil para sala de jantar',
+    src: '/images/sala de jantar vouil.jpg',
+    className: '',
+  },
+  {
+    label: 'Cortina para área externa',
+    src: '/images/area externa mostrando a cortina.jpg',
     className: '',
   },
 ]
@@ -36,22 +50,22 @@ export function ProjectsGallery() {
     <section id="projetos" className="bg-secondary/60 py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
-          eyebrow="Galeria de projetos"
-          title="Projetos que contam histórias"
-          description="Inspire-se em ambientes onde cada detalhe foi pensado para valorizar o espaço."
+          eyebrow="Projetos reais"
+          title="Cortinas que transformam ambientes"
+          description="Conheça alguns dos nossos trabalhos sob medida, com diferentes tecidos, acabamentos e estilos."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-4">
           {projects.map((project, index) => (
             <Reveal
-              key={project.label}
+              key={project.src}
               delay={(index % 4) * 80}
               className={project.className}
             >
               <article className="group relative min-h-72 overflow-hidden bg-neutral-200 sm:h-full">
                 <Image
                   src={project.src}
-                  alt={`${project.label} com cortinas e decoração elegante`}
+                  alt={project.label}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -68,4 +82,3 @@ export function ProjectsGallery() {
     </section>
   )
 }
-
