@@ -1,3 +1,4 @@
+
 import type { SVGProps } from 'react'
 import { Logo } from '@/components/logo'
 import { WhatsAppIcon } from '@/components/whatsapp-icon'
@@ -36,11 +37,11 @@ export function SiteFooter() {
           <div className="lg:col-span-2">
             <Logo />
             <p className="mt-5 max-w-sm text-sm font-light leading-relaxed text-muted-foreground">
-              Ateliê especializado em cortinas de tecido sob medida. Atendimento personalizado para
-              residências, empresas e arquitetos.
+              Cortinas de tecido sob medida, com atendimento personalizado
+              para residências, empresas e arquitetos desde 2017.
             </p>
             <p className="mt-4 text-[0.72rem] font-light uppercase tracking-[0.22em] text-taupe">
-              Desde 2017 · Rio de Janeiro • Niterói
+              Rio de Janeiro • Niterói
             </p>
           </div>
 
@@ -97,7 +98,9 @@ export function SiteFooter() {
           <p className="text-xs font-light text-muted-foreground">
             © {new Date().getFullYear()} Ateliê House Cortinas. Todos os direitos reservados.
           </p>
-          <p className="text-xs font-light text-muted-foreground">Rio de Janeiro • Niterói</p>
+          <p className="text-xs font-light text-muted-foreground">
+            Rio de Janeiro • Niterói
+          </p>
         </div>
       </div>
     </footer>

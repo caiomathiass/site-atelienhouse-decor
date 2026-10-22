@@ -22,19 +22,18 @@ export function Hero() {
         <div className="max-w-3xl">
           <p className="mb-6 flex items-center gap-3 text-[0.7rem] font-light uppercase tracking-[0.32em] text-white/80">
             <span className="h-px w-8 bg-accent" />
-            Ateliê de cortinas sob medida · desde 2017
+            Ateliê especializado em cortinas sob medida · desde 2017
           </p>
 
           <h1 className="text-balance font-serif text-[2.6rem] font-medium leading-[1.05] text-white sm:text-6xl lg:text-7xl">
-            Cortinas sob medida para transformar seus ambientes.
+            Cortinas de tecido sob medida para transformar seus ambientes.
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-lg font-light leading-relaxed text-white/85">
-            Do tecido ao acabamento, cada detalhe pensado para valorizar o seu espaço.
-          </p>
+Projetos personalizados, tecidos selecionados e acabamentos cuidadosos para valorizar cada ambiente da sua casa ou empresa.          </p>
 
           <p className="mt-3 text-sm font-light uppercase tracking-[0.18em] text-white/70">
-            Atendimento personalizado no Rio de Janeiro e Niterói.
+           Atendimento no Recreio, Barra da Tijuca, Zona Sul, outras regiões do Rio de Janeiro e Niterói.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">

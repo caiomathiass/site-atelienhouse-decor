@@ -1,3 +1,4 @@
+
 import { cn } from '@/lib/utils'
 
 interface SectionHeadingProps {
@@ -7,6 +8,7 @@ interface SectionHeadingProps {
   align?: 'left' | 'center'
   tone?: 'dark' | 'light'
   className?: string
+  id?: string
 }
 
 export function SectionHeading({
@@ -16,8 +18,10 @@ export function SectionHeading({
   align = 'center',
   tone = 'dark',
   className,
+  id,
 }: SectionHeadingProps) {
   const isLight = tone === 'light'
+
   return (
     <div
       className={cn(
@@ -33,11 +37,19 @@ export function SectionHeading({
             isLight ? 'text-white/70' : 'text-accent',
           )}
         >
-          <span className={cn('h-px w-8', isLight ? 'bg-white/50' : 'bg-accent')} />
+          <span
+            aria-hidden="true"
+            className={cn(
+              'h-px w-8',
+              isLight ? 'bg-white/50' : 'bg-accent',
+            )}
+          />
           {eyebrow}
         </p>
       )}
+
       <h2
+        id={id}
         className={cn(
           'text-balance font-serif text-3xl font-medium leading-tight sm:text-4xl lg:text-[2.75rem]',
           isLight ? 'text-white' : 'text-foreground',
@@ -45,6 +57,7 @@ export function SectionHeading({
       >
         {title}
       </h2>
+
       {description && (
         <p
           className={cn(
